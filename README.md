@@ -1,4 +1,5 @@
 **1. ĐỀ TÀI: QUẢN LÝ GIAO THÔNG**
+
 Các chức năng trong Quản lý chấm công: Quản lí xe, Quản lí nhân viên, Đơn xin mượn xe, 
 
 1.1. Quản lí xe ![image](https://github.com/user-attachments/assets/22588eb0-27a7-49c2-b501-0b3a54436226)
