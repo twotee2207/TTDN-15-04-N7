@@ -1,37 +1,102 @@
-<<<<<<< HEAD
-# TTDN-15-04-N7
-Tên Project: TTDN-15-05-N1 Mô tả: Bài tập lớn học phần Thực tập doanh nghiệp - Nhóm 7 - Lớp CNTT 15-04  - Khoa Công nghệ thông tin - Đại học Đại Nam
-=======
-[![Build Status](https://runbot.odoo.com/runbot/badge/flat/1/master.svg)](https://runbot.odoo.com/runbot)
-[![Tech Doc](https://img.shields.io/badge/master-docs-875A7B.svg?style=flat&colorA=8F8F8F)](https://www.odoo.com/documentation/15.0)
-[![Help](https://img.shields.io/badge/master-help-875A7B.svg?style=flat&colorA=8F8F8F)](https://www.odoo.com/forum/help-1)
-[![Nightly Builds](https://img.shields.io/badge/master-nightly-875A7B.svg?style=flat&colorA=8F8F8F)](https://nightly.odoo.com/)
+---
+![Ubuntu](https://img.shields.io/badge/Ubuntu-E95420?style=for-the-badge&logo=ubuntu&logoColor=white)
+![GitLab](https://img.shields.io/badge/gitlab-%23181717.svg?style=for-the-badge&logo=gitlab&logoColor=white)
+![Postgres](https://img.shields.io/badge/postgres-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white)
 
-Odoo
-----
+![Python](https://img.shields.io/badge/python-v3.8+-blue.svg)
+[![security: bandit](https://img.shields.io/badge/security-bandit-yellow.svg)](https://github.com/PyCQA/bandit)
 
-Odoo is a suite of web based open source business apps.
 
-The main Odoo Apps include an <a href="https://www.odoo.com/page/crm">Open Source CRM</a>,
-<a href="https://www.odoo.com/app/website">Website Builder</a>,
-<a href="https://www.odoo.com/app/ecommerce">eCommerce</a>,
-<a href="https://www.odoo.com/app/inventory">Warehouse Management</a>,
-<a href="https://www.odoo.com/app/project">Project Management</a>,
-<a href="https://www.odoo.com/app/accounting">Billing &amp; Accounting</a>,
-<a href="https://www.odoo.com/app/point-of-sale-shop">Point of Sale</a>,
-<a href="https://www.odoo.com/app/employees">Human Resources</a>,
-<a href="https://www.odoo.com/app/social-marketing">Marketing</a>,
-<a href="https://www.odoo.com/app/manufacturing">Manufacturing</a>,
-<a href="https://www.odoo.com/">...</a>
+# 1. ĐỀ TÀI: QUẢN LÝ GIAO THÔNG
+Các chức năng trong Quản lý chấm công: Quản lí nhân viên, Quản lí xe, Đơn mượn xe, Quản lí tài xế
 
-Odoo Apps can be used as stand-alone applications, but they also integrate seamlessly so you get
-a full-featured <a href="https://www.odoo.com">Open Source ERP</a> when you install several Apps.
+1.1. Quản lí nhân viên
+![image](https://github.com/user-attachments/assets/856b245b-6946-46e3-a710-f7a20f7da9fc)
+![image](https://github.com/user-attachments/assets/4bf49e18-a6d6-4e57-9b5e-c860775314ef)
 
-Getting started with Odoo
--------------------------
+2.1. Quản lí xe 
+![image](https://github.com/user-attachments/assets/5403b481-f7a2-47aa-8683-1d547f19f298)
+![image](https://github.com/user-attachments/assets/300f138e-4fe1-4627-a0e5-daa8bbe0e4e1)
 
-For a standard installation please follow the <a href="https://www.odoo.com/documentation/15.0/administration/install.html">Setup instructions</a>
-from the documentation.
+3.1. Đơn mượn xe
+![image](https://github.com/user-attachments/assets/780fcba2-0005-498c-84d2-8473521e4ec7)
+![image](https://github.com/user-attachments/assets/d4a6c2eb-0e8f-4de7-abae-6745af1a9217)
 
-To learn the software, we recommend the <a href="https://www.odoo.com/slides">Odoo eLearning</a>, or <a href="https://www.odoo.com/page/scale-up-business-game">Scale-up</a>, the <a href="https://www.odoo.com/page/scale-up-business-game">business game</a>. Developers can start with <a href="https://www.odoo.com/documentation/15.0/developer/howtos.html">the developer tutorials</a>
->>>>>>> 151f9ef2 (?)
+4.1. Quản lí tài xế
+ 
+![image](https://github.com/user-attachments/assets/9c82bb88-ba6f-485f-a51e-833460165eae)
+
+# 2. Cài đặt công cụ, môi trường và các thư viện cần thiết
+
+## 2.1. Clone project.
+```
+git clone https://gitlab.com/anhlta/odoo-fitdnu.git
+```
+```
+cd odoo-fitdnu
+```
+
+```
+git checkout cntt15_04
+```
+
+
+## 2.2. cài đặt các thư viện cần thiết
+
+Người sử dụng thực thi các lệnh sau đề cài đặt các thư viện cần thiết
+
+```
+sudo apt-get install libxml2-dev libxslt-dev libldap2-dev libsasl2-dev libssl-dev python3.10-distutils python3.10-dev build-essential libssl-dev libffi-dev zlib1g-dev python3.10-venv libpq-dev
+```
+## 2.3. khởi tạo môi trường ảo.
+
+Thay đổi trình thông dịch sang môi trường ảo và chạy requirements.txt để cài đặt tiếp các thư viện được yêu cầu
+```
+python3.10 -m venv ./venv
+```
+```
+source venv/bin/activate
+```
+```
+pip3 install -r requirements.txt
+```
+
+# 3. Setup database
+
+Khởi tạo database trên docker bằng việc thực thi file dockercompose.yml.
+```
+sudo apt install docker-compose
+```
+```
+sudo docker-compose up -d
+```
+
+# 4. Setup tham số chạy cho hệ thống
+
+## 4.1. Khởi tạo odoo.conf
+
+Tạo tệp **odoo.conf** có nội dung như sau:
+
+```
+[options]
+addons_path = addons
+db_host = localhost
+db_password = odoo
+db_user = odoo
+db_port = 5434
+xmlrpc_port = 8069
+```
+
+# 5. Chạy hệ thống và cài đặt các ứng dụng cần thiết
+
+Lệnh chạy
+```
+python3 odoo-bin.py -c odoo.conf -u all
+```
+
+
+Người sử dụng truy cập theo đường dẫn _http://localhost:8069/_ để đăng nhập vào hệ thống.
+
+Hoàn tất
+
+
