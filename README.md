@@ -1,4 +1,4 @@
-1. ĐỀ TÀI: QUẢN LÝ GIAO THÔNG
+**1. ĐỀ TÀI: QUẢN LÝ GIAO THÔNG**
 Các chức năng trong Quản lý chấm công: Quản lí xe, Quản lí nhân viên, Đơn xin mượn xe, 
 
 1.1. Quản lí xe ![image](https://github.com/user-attachments/assets/22588eb0-27a7-49c2-b501-0b3a54436226)
@@ -9,7 +9,7 @@ Các chức năng trong Quản lý chấm công: Quản lí xe, Quản lí nhân
 3.1. Đơn mượn xe
 
 
-2. Cài đặt công cụ, môi trường và các thư viện cần thiết
+**2. Cài đặt công cụ, môi trường và các thư viện cần thiết**
 2.1. Clone project.
 git clone https://gitlab.com/anhlta/odoo-fitdnu.git
 cd odoo-fitdnu
