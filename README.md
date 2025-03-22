@@ -15,16 +15,13 @@ Các chức năng trong Quản lý chấm công: Quản lí nhân viên, Quản 
 ![image](https://github.com/user-attachments/assets/4bf49e18-a6d6-4e57-9b5e-c860775314ef)
 
 2.1. Quản lí xe 
-![image](https://github.com/user-attachments/assets/5403b481-f7a2-47aa-8683-1d547f19f298)
-![image](https://github.com/user-attachments/assets/300f138e-4fe1-4627-a0e5-daa8bbe0e4e1)
-
+![image](https://github.com/user-attachments/assets/3067840d-6294-4fb9-8831-d237a50ba5f7)
+![image](https://github.com/user-attachments/assets/334c722d-05b3-41b3-a05e-340dda95d392)
 3.1. Đơn mượn xe
-![image](https://github.com/user-attachments/assets/780fcba2-0005-498c-84d2-8473521e4ec7)
-![image](https://github.com/user-attachments/assets/d4a6c2eb-0e8f-4de7-abae-6745af1a9217)
-
+![image](https://github.com/user-attachments/assets/ba96fd91-62ca-490a-9003-dde326472147)
+![image](https://github.com/user-attachments/assets/9001232b-d91a-479d-8dfd-ea948c05cb8c)
 4.1. Quản lí tài xế
- 
-![image](https://github.com/user-attachments/assets/9c82bb88-ba6f-485f-a51e-833460165eae)
+ ![image](https://github.com/user-attachments/assets/c9326dd5-c072-42ee-83bc-abf419cbb0ac)
 
 # 2. Cài đặt công cụ, môi trường và các thư viện cần thiết
 
